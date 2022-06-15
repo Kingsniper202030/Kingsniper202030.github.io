@@ -230,9 +230,33 @@ p:hover {
     padding-top: 50px;
 }
 
-.name span {
-    color: rgb(245, 100, 17);
+
+.name span{
+    animation-name: name;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    position: relative;
+    color:red;
 }
+@keyframes name {
+    0%{ 
+        color : rgba(95, 157, 69, 0.941);
+    }
+    25%{
+        color : rgb(55, 124, 130);
+    }
+    50%{
+        color : rgb(42, 47, 87);
+    }
+    75%{
+        color : rgb(178, 47, 158);
+    }
+    100%{
+        color : rgb(196, 72, 72);
+    }
+}
+
 
 .hello {
     margin-top: 46px;
