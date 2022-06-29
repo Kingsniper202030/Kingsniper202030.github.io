@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio </title>
+    <!-- <link rel="stylesheet" href="variable.css"> -->
+   <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8cb0e749ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header ko kam yo div ma chai -->
+    <div class="container" id="container">  
+        <div class="animation">This page is under construction !</div>
+       
+        <div class="nav">
+            <div>
+                <img src="image/logo.png" alt="loading" class="logo " id="logos">
+            </div>
+            <ul> <i class="fa-solid fa-align-center" id="equals" onclick="replace()" ></i>
+                <i class="fa-solid fa-xmark" id="cross" onclick="undo()"></i>
+                <li class="NavBar" id="navbar"><a href="#">Home</a></li>
+                <li class="NavBar" id="navbar1"><a href="#">Service</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="bodies">
+        <div class="picside">
+            <img src="image/pic.jpg" class="pic">
+        </div>
+        <div class="intro">
+            <h1 class="name">RAJ <br><span>POU</span>DEL </h1>
+            <h2 class="hello">HELLO MY NAME IS RAJ POUDEL <BR>CURRENTLY STUDING <br> CS BACHELORS</BR></h2>
+                <!-- HTML !-->
+                <a href="https://drive.google.com/file/d/1XJWICiU-IdNHWTuJz6srEQGf4YbniyDJ/view?usp=sharing"><button class="button-86" role="button">Resume</button> </a>
+        </div>
+    </div>
+    <script>
+        function replace() {
+        document.getElementById("equals").style.display = "none";
+        document.getElementById("cross").style.display = "block" ;  
+        document.getElementById("navbar").style.display = "inline-block";
+        document.getElementById("navbar1").style.display = "inline-block";
+        document.getElementById("logos").style.display = "none";
+        }
+        function undo() {
+        document.getElementById("equals").style.display = "block";
+        document.getElementById("cross").style.display = "none" ;  
+        document.getElementById("navbar").style.display = "none";        
+        document.getElementById("navbar1").style.display = "none";
+        document.getElementById("logos").style.display = "flex";
+        }
+
+
+    </script>
+</body>
+
+</html>
